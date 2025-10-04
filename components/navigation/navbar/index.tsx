@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import Theme from "@/context/Theme";
+import Theme from "./Theme";
 
 export default function Navbar() {
   return (
@@ -23,7 +23,7 @@ export default function Navbar() {
       {/* <GlobalSearch /> */}
       <div className="flex-between gap-5">
         Theme
-        {/* <Theme /> */}
+        <Theme />
         {/* {session?.user?.id && (
           <UserAvatar
             id={session.user.id}
