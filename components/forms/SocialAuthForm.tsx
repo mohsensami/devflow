@@ -1,10 +1,9 @@
 "use client";
 
 import Image from "next/image";
-// import { signIn } from "next-auth/react";
+import { signIn } from "next-auth/react";
 import React from "react";
 
-import { signIn } from "@/auth";
 import ROUTES from "@/constants/routes";
 
 import { Button } from "../ui/button";
@@ -37,7 +36,7 @@ const SocialAuthForm = () => {
 
   return (
     <div className="mt-10 flex flex-wrap gap-2.5">
-      <Button className={buttonClass} onClick={() => handleSignIn("github")}>
+      <Button className={buttonClass} onClick={() => handleSignIn("google")}>
         <Image
           src="/icons/github.svg"
           alt="Github Logo"
@@ -48,7 +47,7 @@ const SocialAuthForm = () => {
         <span>Log in with GitHub</span>
       </Button>
 
-      <Button className={buttonClass} onClick={() => handleSignIn("google")}>
+      <Button className={buttonClass} onClick={() => handleSignIn("github")}>
         <Image
           src="/icons/google.svg"
           alt="Google Logo"
