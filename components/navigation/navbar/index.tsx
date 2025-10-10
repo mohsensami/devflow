@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+import MobileNavigation from "./MobileNavigation";
 import Theme from "./Theme";
 
 export default function Navbar() {
@@ -30,9 +31,8 @@ export default function Navbar() {
             name={session.user.name!}
             imageUrl={session.user?.image}
           />
-        )}
-
-        <MobileNavigation /> */}
+        )} */}
+        <MobileNavigation />
       </div>
     </nav>
   );
