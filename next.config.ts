@@ -13,6 +13,17 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+
+        hostname: "static.vecteezy.com",
+
+        port: "",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
