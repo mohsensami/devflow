@@ -21,7 +21,7 @@ interface Question {
 
   author: Author;
 
-  cretedAt: Date;
+  createdAt: Date;
 
   upvotes: number;
 
