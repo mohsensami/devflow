@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  serverExternalPackages: ["pino", "pino-pretty"],
   images: {
     remotePatterns: [
       {
