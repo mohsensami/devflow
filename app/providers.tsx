@@ -25,3 +25,4 @@ const Providers = ({ children, session }: ProvidersProps) => {
 };
 
 export default Providers;
+

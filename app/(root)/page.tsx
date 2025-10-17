@@ -65,7 +65,9 @@ interface SearchParams {
 }
 
 const Home = async ({ searchParams }: SearchParams) => {
-  await test();
+  if (process.env.NODE_ENV !== "production") {
+    await test();
+  }
 
   const { query = "", filter = "" } = await searchParams;
 
